@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>캘빡, 복사하면 캘린더에 빡</title>
+<meta name="description" content="날짜가 적힌 글이나 스크린샷을 복사하면, 캘빡이 기기 안에서 일정을 찾아 원하는 캘린더에 넣어 줘요. Mac 메뉴 막대와 iPhone, iPad에서 써요. 계정도 서버도 없어요.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FAF8FF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#110D24" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="캘빡, 복사하면 캘린더에 빡">
+<meta property="og:description" content="복사한 글과 스크린샷 속 날짜를 기기 안에서 찾아 캘린더에 넣어요. Mac, iPhone, iPad.">
+<meta property="og:image" content="https://jsonpassion.github.io/calppak-site/assets/icon.png">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="aura" aria-hidden="true"><span class="blob a"></span><span class="blob b"></span><span class="blob c"></span></div>
+
+<nav class="nav" aria-label="사이트">
+  <div class="nav-inner">
+    <a class="logo" href="./"><img src="assets/icon.png" alt="" width="28" height="28">캘빡</a>
+    <div class="nav-links">
+      <a href="#how">쓰는 법</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a href="#contact">문의</a>
+      <a class="lang" href="en/" hreflang="en" lang="en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></svg>English</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot"></span>Mac 메뉴 막대와 iPhone, iPad에서</span>
+      <h1>복사하면<br>캘린더에 <span class="pop">빡</span> 들어가요</h1>
+      <p class="sub">가정통신문, 단체방 공지, 메일, 포스터처럼 날짜가 적힌 글이나 스크린샷을 복사해 보세요. 캘빡이 기기 안에서 일정을 찾아 보여 주고, 확인하고 고친 일정만 원하는 캘린더에 넣어요.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#how">쓰는 법 보기</a>
+        <a class="btn btn-ghost" href="#contact">문의하기</a>
+      </div>
+      <p class="hero-meta">기기마다 10번은 무료예요. 계정도 서버도 없어요.</p>
+    </div>
+
+    <figure class="demo" role="img" aria-label="복사한 중간고사 공지에서 일정 세 개를 찾아 가족 캘린더에 넣는 모습">
+      <div class="card copied">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 3h6v3H9zM9 11h6M9 15h4"/></svg>복사한 글</span>
+        <p class="title">[공지] 2학기 중간고사 일정 안내</p>
+        <p>시험 기간: <mark>10월 19일(월) ~ 10월 23일(금)</mark></p>
+        <p>성적 공개: <mark>11월 2일(월) 오후 2시</mark>, 학생 포털</p>
+        <p>학부모 상담회: <mark>11월 5일(목) 오후 6시 30분~8시</mark>, 본관 대강당</p>
+      </div>
+      <div class="flow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+      <div class="card events">
+        <div class="ev"><span class="bar"></span><div><b>2학기 중간고사</b><small>10월 19일(월) ~ 10월 23일(금), 종일</small></div><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></div>
+        <div class="ev"><span class="bar"></span><div><b>성적 공개</b><small>11월 2일(월) 오후 2:00, 학생 포털</small></div><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></div>
+        <div class="ev"><span class="bar"></span><div><b>학부모 상담회</b><small>11월 5일(목) 오후 6:30 ~ 8:00, 본관 대강당</small></div><span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span></div>
+        <div class="ev-foot"><span class="cal"><i></i>가족</span><span class="add">캘린더에 3개 넣기</span></div>
+      </div>
+    </figure>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">How it works</div>
+      <h2>복사하고, 확인하고, 넣으면 끝</h2>
+      <p>Mac에서는 메뉴 막대에서, iPhone과 iPad에서는 앱에서 똑같이 써요.</p>
+    </div>
+    <div class="how-grid">
+      <article class="how-card">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.8"/><path d="M4 7.5h16M2 19.5h20"/></svg></span>
+          <h3>Mac에서</h3>
+        </div>
+        <ol class="steps">
+          <li>날짜가 있는 글을 복사하거나, <kbd>Control-Shift-Command-4</kbd>로 화면 일부를 클립보드에 캡처해요.</li>
+          <li>메뉴 막대의 <b>캘빡</b>을 누르거나 <kbd>Control-Option-Command-C</kbd>를 눌러 열고, 복사한 것에서 일정을 찾아요.</li>
+          <li>찾은 일정을 확인하고, 이름이나 시간, 장소가 다르면 고쳐요. 넣지 않을 일정은 빼면 돼요.</li>
+          <li>넣을 캘린더를 고르고 넣어요. <b>ICS로 내보내기</b>로 .ics 파일을 저장할 수도 있어요.</li>
+        </ol>
+        <p class="tip">처음 열 때 macOS가 다른 앱에서 붙여넣기를 허용할지 물으면 허용을 골라 주세요. 캘빡은 열거나 찾기를 누를 때만 클립보드를 읽어요.</p>
+      </article>
+      <article class="how-card">
+        <div class="head">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 18.5h3"/></svg></span>
+          <h3>iPhone, iPad에서</h3>
+        </div>
+        <ol class="steps">
+          <li>날짜가 있는 글을 복사하거나, 평소처럼 스크린샷을 찍어요.</li>
+          <li>캘빡을 열고 <b>붙여넣기</b>를 누르거나, <b>스크린샷 고르기</b>로 찍어 둔 스크린샷을 골라요.</li>
+          <li>찾은 일정을 확인하고, 다른 부분이 있으면 고쳐요.</li>
+          <li>고른 캘린더에 넣거나 .ics 파일로 내보내요. 넣은 직후라면 <b>되돌리기</b>로 바로 뺄 수 있어요.</li>
+        </ol>
+        <p class="tip">붙여넣기 버튼은 허용을 따로 묻지 않아요. 캘빡은 누를 때만 클립보드를 읽어요.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">On your device</div>
+      <h2>기기 안에서 찾고, 확인한 것만 넣어요</h2>
+      <p>공지 한 장에 날짜가 여러 개 있어도 한 번에 찾아요.</p>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2.2"/><path d="M9.5 2.5v3M14.5 2.5v3M9.5 18.5v3M14.5 18.5v3M2.5 9.5h3M2.5 14.5h3M18.5 9.5h3M18.5 14.5h3"/></svg></span>
+        <h3>기기 안에서 찾아요</h3>
+        <p>스크린샷 속 글자는 Vision이 읽고, 날짜와 시간은 Apple의 날짜 감지가 찾고, 일정 이름은 기기 안의 Apple Intelligence가 붙여요.</p>
+      </div>
+      <div class="feature">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M4 11h8M4 16h5"/><path d="m13.5 17 2.5 2.5 5-5.5"/></svg></span>
+        <h3>넣기 전에 확인해요</h3>
+        <p>일정마다 이름, 시간, 장소, 반복을 고칠 수 있어요. 이미 지난 날짜나 요일이 맞지 않는 날짜는 따로 알려 줘요.</p>
+      </div>
+      <div class="feature">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4M12 12.5v5M9.5 15h5"/></svg></span>
+        <h3>원하는 캘린더로</h3>
+        <p>iCloud, Google, Exchange처럼 이 기기에서 편집할 수 있는 캘린더에 넣거나 .ics 파일로 내보내요. 넣은 직후에는 되돌릴 수 있어요.</p>
+      </div>
+    </div>
+    <div class="promise">
+      <h3>복사한 글도, 스크린샷도 기기 밖으로 나가지 않아요</h3>
+      <p>날짜 찾기는 처음부터 끝까지 이 기기 안에서 해요. 캘빡은 인터넷으로 아무것도 보내지 않고, 결제만 Apple의 App Store를 거쳐요.</p>
+      <ul class="chips" aria-label="캘빡에 없는 것">
+        <li>계정 없음</li>
+        <li>서버 없음</li>
+        <li>분석 도구 없음</li>
+        <li>광고 없음</li>
+        <li>추적 없음</li>
+      </ul>
+      <a class="more" href="privacy/">개인정보 처리방침 읽기 →</a>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Pricing</div>
+      <h2>10번은 무료로 넣어 봐요</h2>
+      <p>찾기와 확인은 언제나 무료예요. 캘린더에 넣거나 .ics 파일로 저장하는 건 기기마다 10번까지 무료고, 그다음은 이용권 하나만 고르면 돼요.</p>
+    </div>
+    <div class="plans">
+      <div class="plan free">
+        <span class="badge">먼저 무료로</span>
+        <div class="name">무료</div>
+        <div class="price">₩0</div>
+        <p class="note">기기마다 10번 넣기. 한 번에 여러 일정을 넣어도 1번으로 세요.</p>
+      </div>
+      <div class="plan">
+        <div class="name">월간 이용권</div>
+        <div class="price">₩1,100<span class="per">/ 월</span></div>
+        <p class="note">매월 갱신, 언제든 해지할 수 있어요.</p>
+      </div>
+      <div class="plan">
+        <div class="name">연간 이용권</div>
+        <div class="price">₩3,300<span class="per">/ 년</span></div>
+        <p class="note">한 달에 ₩275꼴, 매년 갱신돼요.</p>
+      </div>
+      <div class="plan">
+        <div class="name">평생 이용권</div>
+        <div class="price">₩7,500<span class="per">한 번</span></div>
+        <p class="note">한 번 결제하면 갱신 없이 계속 써요.</p>
+      </div>
+    </div>
+    <p class="price-foot">세 이용권 모두 횟수 제한 없이 넣을 수 있고, 한 번 사면 같은 Apple 계정의 Mac, iPhone, iPad에서 모두 써요. 월간, 연간 이용권은 현재 기간이 끝나기 최소 24시간 전에 해지하지 않으면 자동으로 갱신되고, Apple 계정 설정에서 관리하거나 해지할 수 있어요. 가격은 대한민국 App Store 기준이에요.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">FAQ</div>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>복사한 글이 기기 밖으로 나가나요?</summary>
+        <div class="answer">
+          <p>아니요. 스크린샷 읽기와 날짜 찾기 모두 이 기기 안에서 해요. 캘빡에는 계정도 서버도 없고, 앱이 인터넷으로 보내는 것도 없어요. 자세한 내용은 <a href="privacy/">개인정보 처리방침</a>에 있어요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>스크린샷은 어떻게 넣나요?</summary>
+        <div class="answer">
+          <p><b>Mac에서는</b> <kbd>Control-Shift-Command-4</kbd>를 누르고 원하는 부분을 끌어서 고르세요. 캡처가 클립보드에 들어가면 캘빡을 여세요.</p>
+          <p><b>iPhone, iPad에서는</b> 평소처럼 스크린샷을 찍고 캘빡에서 스크린샷 고르기를 누르세요. 시스템 사진 선택 화면이 열리고, 캘빡은 고른 사진만 봐요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>일정 이름이 어색할 때는 왜 그런가요?</summary>
+        <div class="answer">
+          <p>Apple Intelligence가 없으면 날짜 옆의 말로 이름을 붙여요. 기기가 Apple Intelligence를 지원하지 않거나, 설정에서 꺼져 있거나, 아직 준비 중이거나, 그 언어를 아직 읽지 못할 때 그래요.</p>
+          <p>이때도 날짜는 똑같이 찾고, 넣기 전에 이름을 얼마든지 고칠 수 있어요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>무료 1번은 어떻게 세나요?</summary>
+        <div class="answer">
+          <p>캘린더에 넣거나 .ics 파일로 저장할 때마다 1번으로 세요. 한 번에 여러 일정을 넣어도 1번이에요. 찾기와 확인은 언제나 무료예요.</p>
+          <p>무료 10번은 기기마다 따로 세요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>어떤 캘린더에 넣을 수 있나요?</summary>
+        <div class="answer">
+          <p>이 기기에서 편집할 수 있는 모든 캘린더에 넣을 수 있어요. 설정에서 추가한 iCloud, Google, Exchange 계정도 포함돼요.</p>
+          <p>구독한 캘린더처럼 편집할 수 없는 캘린더에는 넣을 수 없어요. 다른 캘린더 앱에서 쓰려면 .ics 파일로 내보내 주세요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>넣은 일정을 되돌릴 수 있나요?</summary>
+        <div class="answer">
+          <p>넣은 직후 아래에 뜨는 알림에서 되돌리기를 누르세요. 나중에는 캘린더 앱에서 지우면 돼요.</p>
+        </div>
+      </details>
+      <details>
+        <summary>다른 기기에서 또 결제해야 하나요?</summary>
+        <div class="answer">
+          <p>아니요. Mac, iPhone, iPad 어디서 산 이용권이든 같은 Apple 계정이면 모든 기기에서 써요. 새 기기에서 이용권이 보이지 않으면 앱에서 구매 복원을 눌러 주세요.</p>
+          <p>무료 횟수는 기기마다 따로 세요.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Contact</div>
+      <h2>막히는 곳이 있으면 알려 주세요</h2>
+      <p>날짜를 잘못 찾은 글이 있거나 쓰다가 막히는 곳이 있으면 메일로 보내 주세요. 복사한 글을 함께 보낼 때는 이름이나 연락처 같은 개인정보를 가려 주세요. 확인하는 대로 답장드릴게요.</p>
+    </div>
+    <div class="contact-card">
+      <a class="btn btn-primary" href="mailto:forgelab.aitech@gmail.com?subject=%5B%EC%BA%98%EB%B9%A1%5D%20%EB%AC%B8%EC%9D%98"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>메일 보내기</a>
+      <span class="mail">forgelab.aitech@gmail.com</span>
+      <p class="hint">앱 안의 의견 보내기로도 보낼 수 있어요.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <span class="f-brand"><img src="assets/icon.png" alt="" width="24" height="24">캘빡</span>
+    <a href="privacy/">개인정보 처리방침</a>
+    <a href="terms/">이용약관</a>
+    <a class="contact-btn" href="mailto:forgelab.aitech@gmail.com?subject=%5B%EC%BA%98%EB%B9%A1%5D%20%EB%AC%B8%EC%9D%98"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>문의하기</a>
+    <a href="en/" hreflang="en" lang="en">English</a>
+    <span class="f-copy">© 2026 ForgeLab</span>
+  </div>
+</footer>
+
+</body>
+</html>
